@@ -1,0 +1,39 @@
+# Compiled source #
+###################
+*.class
+build
+dist
+out
+target/
+
+# OS generated files #
+######################
+.DS_Store
+thumbs.db
+
+# IDE generated files #
+#######################
+.project
+.classpath
+.settings/
+.idea
+*.iml
+.tern-project
+.javax-project.el
+.externalToolBuilders
+.metadata/
+.recommenders/
+
+#######
+# SCM #
+#######
+.svn
+
+# javascript #
+##############
+node_modules/
+.tmp
+.sass-cache
+bower_components
+dist_grunt
+*.less
