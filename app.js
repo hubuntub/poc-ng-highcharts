@@ -3,7 +3,8 @@
     angular.module('app', [
             'ngRoute',
             'ngCookies',
-            'ngSanitize'
+            'ngSanitize',
+            'highcharts-ng'
         ])
         .config(function ($routeProvider) {
             $routeProvider
@@ -16,5 +17,12 @@
                     redirectTo: '/index'
                 });
         })
+        .config(['highchartsNGProvider', function (highchartsNGProvider) {
+            highchartsNGProvider.lazyLoad();
+
+            highchartsNGProvider.lazyLoad([highchartsNGProvider.HIGHCHART, "maps/modules/map.js", "mapdata/custom/world.js"]);
+
+            highchartsNGProvider.basePath("/js/");
+        }])
         .run();
 })();

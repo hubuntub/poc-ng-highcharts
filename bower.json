@@ -9,7 +9,8 @@
     "angular-route": "1.4.8",
     "angular-sanitize": "1.4.8",
     "angular-translate": "2.5.2",
-    "jquery": "2.1.1"
+    "jquery": "2.1.1",
+    "highcharts-ng": "^0.0.11"
   },
   "appPath": "app",
   "resolutions": {
